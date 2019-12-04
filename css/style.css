@@ -57,7 +57,7 @@ h3{
 
 main{
   display: grid;
-  grid-column-area: 1fr 1fr;
+  grid-row: 1fr 1fr;
   grid-template-areas:
   "allie"
   "img      story"
