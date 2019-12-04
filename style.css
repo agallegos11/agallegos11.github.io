@@ -1,112 +1,103 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
-
-body{
-  padding-top: 0;
-  background-color: #f8f8ff;
-  color: #000000;
-  font-family: 'Montserrat', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 a{
-  color: #000000;
-  font-size: 20px;
+  color: black;
+}
+
+a:hover{
+  color: white;
 }
 
 a:visited{
-  color: #fa7268;
+  color: rgb(0, 128, 87);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  background-color: rgb(255,209,184);
+}
+
+nav ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
 }
 
 h1{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Merriweather', serif;
+  padding-top: 20px;
+}
+
+body{
+  padding-top: 25px;
+  padding-left: 20px;
+  color: #000000;
+  max-width: 960px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("img/leone-venter-VieM9BdZKFo-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h2{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 h3{
-  font-family: 'Oswald', sans-serif;
-}
-
-img{
-  width: 20px;
-  padding: 5px;
-  vertical-align: middle
+  font-family: 'Merriweather', serif;
 }
 
 main{
   display: grid;
-  clear: both;
-  grid-template-columns: 2fr,auto;
-  grid-auto-rows: minmax(150px, auto);
-  column-gap: 100px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "allie"
+  "img      story"
+  "img   story"
 }
 
-#wrapper{
-  max-width: auto;
-  margin: 0;
+footer {
+  background-color: rgb(255,209,184);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-#header{
-  height: 150px;
-  background-color: #000000;
-  color: #f8f8ff;
-  font-size: 48px;
-  text-align: center;
+footer p {
+  color: #222;
+  padding-left: 20px;
 }
 
-#contact{
-  grid-column: 1;
+.allie{
+  grid-column: 1 / span 2;
   grid-row: 1;
-  text-align: right;
 }
 
-#education{
+.img{
   grid-column: 1;
-  grid-row:2;
-  text-align: right;
+  grid-row: 2, 3;
 }
 
-#expertise{
-  grid-column: 1;
-  grid-row: 3;
-  text-align: right;
-}
-
-#relevant-coursework{
-  grid-column: 1;
-  grid-row: 4;
-  text-align: right;
-}
-
-.cookerly{
-  background-color: #f8f8ff;
-  color: #000000;
+.story{
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 2, 3;
 }
 
-.cookerly p:before{
-  content: " • ";
+#story{
+  vertical-align: top;
 }
 
-.creative-loafing{
-  background-color: #f8f8ff;
-  color: #000000;
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.creative-loafing p:before{
-  content: " • ";
-}
-.pacific-pearl{
-  background-color: #f8f8ff;
-  color: #000000
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.pacific-pearl p:before{
-  content: " • ";
+img{
+  border: 1px solid black;
+  margin-top: 12px;
 }
