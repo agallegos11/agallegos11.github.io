@@ -57,8 +57,9 @@ h3{
 
 main{
   display: grid;
-  grid-row-gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
+  grid-template-columns: 300px 1fr;
   grid-template-areas:
   "allie"
   "img      story"
@@ -97,7 +98,22 @@ footer p {
   vertical-align: top;
 }
 
+#journalism{
+  padding-top: 35px;
+}
+
+#fashion{
+  vertical-align: top;
+}
+
+#travel{
+  padding-top: 58px;
+}
+
+#writing{
+  padding-top: 5px;
+}
 img{
   border: 1px solid black;
-  margin-top: 12px;
+  margin-top: 18px;
 }
