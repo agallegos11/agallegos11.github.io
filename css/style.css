@@ -57,7 +57,6 @@ h3{
 
 main{
   display: grid;
-  grid-column-gap: 10px;
   grid-column-area: 1fr 1fr;
   grid-template-areas:
   "allie"
@@ -84,7 +83,6 @@ footer p {
 }
 
 .img{
-  width: 300px;
   grid-column: 1;
   grid-row: 2, 3;
 }
