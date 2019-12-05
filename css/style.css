@@ -94,26 +94,6 @@ footer p {
   grid-row: 2, 3;
 }
 
-#story{
-  vertical-align: top;
-}
-
-#journalism{
-  padding-top: 35px;
-}
-
-#fashion{
-  vertical-align: top;
-}
-
-#travel{
-  padding-top: 58px;
-}
-
-#writing{
-  padding-top: 5px;
-}
-
 img{
   border: 1px solid black;
   margin-top: 18px;
